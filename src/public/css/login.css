@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #ffffff, #000000);
+
+}
+.container {
+    position: relative;
+    width: 420px;
+    padding: 30px 40px;
+    background-color: transparent;
+    border: 2px solid #00000056;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    backdrop-filter: blur(50px);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .input-group {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.container .input-group #email,
+.container .input-group #password {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #00000056;
+    border-radius: 40px;
+    overflow: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+    
+    &::placeholder {
+        color: #fff;
+    }
+
+    &:focus {
+        border-color: #0020ac;
+        outline: none;
+    }
+}
+
+.container .input-group input:-webkit-autofill {
+    -webkit-text-fill-color: black;     /* Cor do texto preenchido */
+    background-color: #fff !important;  /* Cor de fundo, se necessário */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.container .input-group i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.container .options a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container .options a:hover {
+    text-decoration: underline;
+}
+
+
+.container .btn {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #000000, #0020ac);
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset ;
+}
+
+.container .btn:hover {
+    background: linear-gradient(-90deg, #000000, #0020ac);
+}
+
+
+.container .register {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.container .register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container .register a:hover {
+    text-decoration: underline;
+}
+
+
+
+
